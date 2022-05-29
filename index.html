@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
-<body onload="carregar()">
+<body >
     <header>
-        <h1>hora do dia</h1>
+        <h1>verificador de idade</h1>
     </header>
         <section>
         
-            <div id="msg">
-                aqui vai aparecer a mensagem...
-            </div>
-            <div id="foto">
-                <img id="imagem" src="fotodia.png" alt="foto do bom dia">
+         <div >
+           <p>Ano de Nascimento
+           <input type="number" name="txtano" id="txtano" min="0"> </p> 
+           <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for=" mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+           </p> 
+           <input type="button" value="Verificar" onclick="verificar()">
+         </div>
+            <div id="res">
+
+                Preencha os dados acima para ver o resultado   
             </div>
 
         </section>
